@@ -1,0 +1,29 @@
+name: Compilar LaTeX
+
+on:
+  push:
+    paths:
+      - '**.tex'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar LaTeX
+        run: sudo apt-get update && sudo apt-get install -y texlive-full
+
+      - name: Compilar archivos .tex
+        run: |
+          for file in *.tex; do
+            pdflatex "$file"
+          done
+
+      - name: Subir PDF como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: PDFs-compilados
+          path: ./*.pdf
