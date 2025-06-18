@@ -1,0 +1,162 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{enumitem}
+
+\title{\textbf{Charla de Seguridad Digital para el Mundo Maker\\ \large "Entender los riesgos para protegerse sin paranoia"}}
+\author{[Tu nombre]}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introducción: Tecnología y Seguridad en el Mundo Maker}
+
+En el ecosistema maker convergen creatividad, hardware abierto, protocolos diversos y, en muchas ocasiones, ausencia de controles de seguridad básicos. Esto abre puertas tanto a la innovación como a la exposición involuntaria a riesgos digitales con impacto físico.
+
+\begin{itemize}
+    \item ¿Por qué importa la seguridad digital hoy?
+    \item El perfil maker: creatividad, experimentación, exposición.
+    \item Riesgos inadvertidos por exceso de confianza en la tecnología.
+\end{itemize}
+
+\section{El Flipper Zero: El Cuchillo Suizo del Pentesting Personal}
+
+\subsection{¿Qué es el Flipper Zero?}
+Dispositivo multifunción de pentesting orientado inicialmente a investigadores de seguridad. Actualmente es ampliamente accesible para cualquier persona interesada.
+
+\subsection{Funciones principales}
+\begin{itemize}
+    \item Sub-GHz (mandos, garajes, sensores)
+    \item RFID (tarjetas de acceso)
+    \item Infrared (controles remotos)
+    \item GPIO hacking (hardware hacking)
+    \item USB HID (BadUSB)
+    \item Bluetooth/BLE
+\end{itemize}
+
+\subsection{Add-ons y expansión}
+\begin{itemize}
+    \item Wi-Fi Devboard
+    \item Antenas externas
+    \item Scripts y firmwares alternativos
+\end{itemize}
+
+\subsection{Desde el punto de vista de la víctima}
+\begin{itemize}
+    \item Robo de señales
+    \item Clonación de accesos
+    \item Spoofing y suplantación
+    \item Interacciones físicas peligrosas
+\end{itemize}
+
+\section{Amenazas Digitales con Impacto en el Mundo Físico}
+
+\begin{itemize}
+    \item Cerraduras electrónicas
+    \item Controles de acceso a edificios
+    \item Garajes, barreras y portones
+    \item Dispositivos DIY sin protocolos seguros
+\end{itemize}
+
+\section{Hackeo Social: Atacar a la Persona}
+
+\subsection{Ingeniería social aplicada al mundo maker}
+\begin{itemize}
+    \item Suplantación de roles
+    \item Observación de rutinas
+    \item Interacción física encubierta
+\end{itemize}
+
+\subsection{Ataques combinados}
+\begin{itemize}
+    \item Evil Twin Wi-Fi
+    \item HID scripts en eventos presenciales
+    \item Escucha pasiva de frecuencias RFID
+\end{itemize}
+
+\section{Cómo Protegerse sin Paranoia}
+
+\subsection{Prácticas físicas}
+\begin{itemize}
+    \item Fundas Faraday
+    \item Gestión de dispositivos de acceso
+    \item Minimización de señales radiadas
+\end{itemize}
+
+\subsection{Prácticas digitales}
+\begin{itemize}
+    \item Firmware actualizado
+    \item Autenticación multifactor
+    \item Desactivar interfaces no usadas
+\end{itemize}
+
+\section{Ética Hacker y Cultura del Pentesting}
+
+\begin{itemize}
+    \item Diferenciar hacker de criminal
+    \item Principios de divulgación responsable
+    \item Ética en el uso de herramientas de pentesting
+\end{itemize}
+
+\section{Comparativa de Dispositivos de Pentesting}
+
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Dispositivo} & \textbf{Precio (€)} & \textbf{Dificultad} & \textbf{Riesgo ético} \\
+\hline
+Flipper Zero & 150-250 & Media & Alto \\
+Rubber Ducky & 50-100 & Baja & Alto \\
+Wi-Fi Pineapple & 200-300 & Alta & Alto \\
+LAN Turtle & 100-150 & Media & Medio \\
+Bash Bunny & 120-200 & Media & Alto \\
+ESP32 devkits & 5-20 & Alta & Variable \\
+\hline
+\end{tabular}
+
+\section{Casos Prácticos y Escenificaciones con Actores}
+
+\begin{itemize}
+    \item Clonación de tarjeta de hotel
+    \item Interferencia en apertura de garajes
+    \item Red Wi-Fi trampa en evento maker
+\end{itemize}
+
+\section{Demostraciones Reales sobre el Público}
+
+\begin{itemize}
+    \item Demostración controlada de ataques con consentimiento
+    \item Feedback inmediato del público
+\end{itemize}
+
+\section{Sorteo de Premios: Hackeados Premiados}
+
+\begin{itemize}
+    \item Selección aleatoria entre participantes hackeados
+    \item Premios relacionados con el mundo maker y la ciberseguridad
+\end{itemize}
+
+\section{Cierre y Reflexión Final}
+
+\begin{itemize}
+    \item Educación y concienciación como mejores defensas
+    \item Seguridad como parte del diseño maker
+    \item Compromiso ético en el conocimiento adquirido
+\end{itemize}
+
+\section{Recursos Adicionales y Bibliografía}
+
+\begin{itemize}
+    \item \textit{Hacking: The Art of Exploitation}
+    \item \textit{The Hacker Playbook}
+    \item Plataformas: Hack The Box, TryHackMe, Root Me
+    \item Foros: Hackaday, r/flipperzero, DEFCON, CCC
+\end{itemize}
+
+\end{document}
