@@ -1,0 +1,103 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{enumitem}
+
+\title{\textbf{Charla de Seguridad Digital para el Mundo Maker\\ \large "Entender los riesgos para protegerse sin paranoia"}}
+\author{[Tu nombre]}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introducción: Tecnología y Seguridad en el Mundo Maker}
+
+Vivimos en una época fascinante para los makers: tenemos acceso a tecnologías que hace apenas unos años solo estaban en manos de gobiernos, laboratorios o grandes empresas. Podemos fabricar objetos, automatizar procesos, abrir puertas, crear redes de comunicación o incluso clonar dispositivos, todo con herramientas al alcance de cualquiera.
+
+Pero esa accesibilidad también abre un nuevo frente de exposición: lo que podemos construir, otros también pueden explotarlo si no lo diseñamos con seguridad en mente.
+
+El objetivo de esta charla es:
+
+\begin{itemize}
+    \item Mostrar de forma práctica cómo herramientas como el Flipper Zero pueden ser utilizadas contra nosotros.
+    \item Aprender a protegernos sin entrar en paranoia.
+    \item Concienciar sobre los riesgos físicos derivados de vulnerabilidades digitales.
+    \item Abordar la ética del hackeo y el uso responsable de herramientas de pentesting.
+\end{itemize}
+
+Además, lo haremos de forma participativa, con ejemplos escenificados y algunas pequeñas sorpresas prácticas sobre los asistentes.
+
+\section{El Flipper Zero: El Cuchillo Suizo del Pentesting Personal}
+
+\subsection{¿Qué es el Flipper Zero?}
+
+El Flipper Zero es un dispositivo multifunción diseñado inicialmente para investigadores de seguridad. Compacto, portable, versátil y muy intuitivo, ha ganado enorme popularidad tanto en entornos de pentesting como entre curiosos tecnológicos.
+
+Permite interactuar con múltiples protocolos inalámbricos y electrónicos, muchos de ellos presentes en la vida cotidiana de cualquier ciudadano moderno.
+
+\subsection{Sus funciones principales incluyen:}
+
+\begin{itemize}
+    \item \textbf{Sub-GHz}: copiar y retransmitir señales de mandos a distancia de garajes, persianas, sistemas de alarma, etc.
+    \item \textbf{RFID/NFC}: clonar tarjetas de acceso de edificios, oficinas, hoteles, gimnasios.
+    \item \textbf{Infrarrojos (IR)}: controlar dispositivos electrónicos mediante señales de mando.
+    \item \textbf{USB HID (BadUSB)}: simular un teclado o ratón al conectarlo a un ordenador.
+    \item \textbf{GPIO}: interactuar directamente con hardware externo.
+    \item \textbf{Bluetooth/BLE}: interactuar con dispositivos cercanos.
+\end{itemize}
+
+\subsection{Desde el punto de vista de la víctima}
+
+Estas capacidades, usadas sin consentimiento, permiten:
+
+\begin{itemize}
+    \item Interceptar y clonar dispositivos de acceso físico.
+    \item Ejecutar comandos en dispositivos ajenos.
+    \item Interferir en sistemas electrónicos sin contacto físico directo.
+\end{itemize}
+
+\newpage
+
+\section{Escenificación 1: El Hotel Comprometido}
+
+\subsection*{Personajes}
+
+\begin{itemize}
+    \item \textbf{Víctima}: huésped en un hotel.
+    \item \textbf{Atacante}: persona aparentemente amable en el vestíbulo.
+    \item \textbf{Narrador}: introduce y explica la escena (puedes ser tú misma).
+\end{itemize}
+
+\subsection*{Guion escénico}
+
+\textbf{Narrador:}
+
+\textit{Imaginemos una situación real que puede ocurrir en cualquier hotel. Nuestra víctima ha llegado al hotel y va a desayunar tranquilamente.}
+
+\textbf{(La víctima se sienta en la mesa y deja su tarjeta RFID de la habitación en la mesa, junto al móvil.)}
+
+\textbf{Narrador:}
+
+\textit{La tarjeta de acceso RFID está ahí, expuesta. Entra ahora el atacante. No necesita tocar nada. Solo pasa a escasos centímetros con un dispositivo similar a este (muestra el Flipper Zero) en modo de lectura de tarjetas.}
+
+\textbf{(El atacante simula escanear con disimulo mientras pasa cerca.)}
+
+\textbf{Narrador:}
+
+\textit{En segundos, ha copiado la tarjeta. Más tarde puede acercarse a la habitación cuando la víctima no esté y acceder sin dejar rastro de entrada forzada.}
+
+\subsection*{Mensaje clave}
+
+\begin{itemize}
+    \item Las tarjetas RFID de baja frecuencia (125 KHz) se copian fácilmente.
+    \item Nadie sospecha de alguien que simplemente pasa cerca.
+    \item Existen fundas protectoras baratas que bloquean este tipo de lectura.
+\end{itemize}
+
+\newpage
