@@ -1,0 +1,249 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{longtable}
+
+\title{\textbf{Charla de Seguridad Digital para el Mundo Maker \\ \large "Entender los riesgos para protegerse sin paranoia"}}
+\author{[Tu nombre]}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introducción: Tecnología y Seguridad en el Mundo Maker}
+
+Vivimos en la era dorada del acceso a la tecnología. La comunidad maker puede hoy fabricar, programar, automatizar y construir sistemas con herramientas que antes sólo poseían gobiernos o grandes corporaciones. Pero esa accesibilidad también tiene una contrapartida: el riesgo.
+
+La seguridad digital ya no es algo exclusivo del mundo informático. Muchas amenazas digitales tienen consecuencias directas en el mundo físico: puertas que se abren, alarmas que se desactivan, dispositivos que actúan sin nuestra intervención.
+
+El objetivo de esta charla es:
+
+\begin{itemize}
+    \item Mostrar de forma práctica cómo se explotan vulnerabilidades físicas y digitales.
+    \item Enseñar cómo protegerse de forma realista, evitando la paranoia.
+    \item Reflexionar sobre la ética del uso de herramientas de pentesting.
+\end{itemize}
+
+\section{El Flipper Zero: El Cuchillo Suizo del Pentesting Personal}
+
+\subsection{¿Qué es el Flipper Zero?}
+
+Un dispositivo multifunción portátil, diseñado para investigación de seguridad pero popularizado masivamente.
+
+\begin{itemize}
+    \item Compacto, con interfaz intuitiva.
+    \item Permite interactuar con protocolos muy utilizados en el día a día.
+\end{itemize}
+
+\subsection{Funciones principales}
+
+\begin{itemize}
+    \item \textbf{Sub-GHz (300-928 MHz):} captura, análisis y retransmisión de señales de mandos de garaje, persianas, alarmas.
+    \item \textbf{RFID (125 KHz y 13.56 MHz):} lectura, clonación y emulación de tarjetas de acceso.
+    \item \textbf{Infrared (IR):} replicación de controles remotos.
+    \item \textbf{USB HID:} simulación de teclado para ataques tipo BadUSB.
+    \item \textbf{GPIO:} control de hardware externo.
+    \item \textbf{Bluetooth BLE:} escaneo e interacción con dispositivos cercanos.
+\end{itemize}
+
+\subsection{Add-ons y expansión}
+
+\begin{itemize}
+    \item Wi-Fi Devboard (exploración de redes Wi-Fi)
+    \item Antenas externas (amplificación Sub-GHz)
+    \item Firmwares modificados (RogueMaster, Unleashed, etc.)
+\end{itemize}
+
+\section{Desde el punto de vista de la víctima}
+
+\begin{itemize}
+    \item \textbf{Acceso físico no autorizado:} clonación de tarjetas de hotel, oficinas, gimnasios.
+    \item \textbf{Interferencia remota:} apertura de garajes, desactivación de alarmas.
+    \item \textbf{Ataques BadUSB:} ejecución de comandos automatizados en segundos.
+    \item \textbf{Explotación BLE:} análisis de dispositivos cercanos.
+\end{itemize}
+
+\section{Amenazas Digitales con Impacto en el Mundo Físico}
+
+\begin{itemize}
+    \item Cerraduras electrónicas vulnerables.
+    \item Portones y barreras sin rolling-code.
+    \item Sistemas DIY caseros sin protección básica.
+    \item Dispositivos IOT sin cifrado.
+\end{itemize}
+
+\section{Hackeo Social: Atacar a la Persona}
+
+\subsection{Ingeniería social aplicada al mundo maker}
+
+\begin{itemize}
+    \item Ganar confianza mediante conocimiento técnico aparente.
+    \item Observar rutinas y hábitos.
+    \item Manipular al usuario para obtener claves o acceso físico.
+\end{itemize}
+
+\subsection{Ataques combinados}
+
+\begin{itemize}
+    \item Evil Twin Wi-Fi en eventos makers.
+    \item USB drop attacks (dejar dispositivos USB preparados para ser recogidos).
+    \item Escucha pasiva de frecuencias abiertas.
+\end{itemize}
+
+\section{Cómo Protegerse sin Paranoia}
+
+\subsection{Prácticas físicas}
+
+\begin{itemize}
+    \item Fundas Faraday para tarjetas.
+    \item Bloqueadores físicos de señales.
+    \item Desactivación de llaves digitales cuando no se usan.
+\end{itemize}
+
+\subsection{Prácticas digitales}
+
+\begin{itemize}
+    \item Actualización constante de firmware.
+    \item Contraseñas robustas y autenticación múltiple.
+    \item No conectar dispositivos USB de origen dudoso.
+\end{itemize}
+
+\section{Ética Hacker y Cultura del Pentesting}
+
+\begin{itemize}
+    \item Un hacker no es un criminal.
+    \item Divulgación responsable: reportar vulnerabilidades.
+    \item No explotar debilidades fuera de entornos controlados o con víctimas no consentidas.
+\end{itemize}
+
+\section{Comparativa de Dispositivos de Pentesting}
+
+\begin{longtable}{|p{4cm}|p{2cm}|p{2cm}|p{3cm}|}
+\hline
+\textbf{Dispositivo} & \textbf{Precio (€)} & \textbf{Dificultad} & \textbf{Riesgo ético} \\
+\hline
+Flipper Zero & 150-250 & Media & Alto \\
+Rubber Ducky & 50-100 & Baja & Alto \\
+Wi-Fi Pineapple & 200-300 & Alta & Alto \\
+LAN Turtle & 100-150 & Media & Medio \\
+Bash Bunny & 120-200 & Media & Alto \\
+ESP32 devkits & 5-20 & Alta & Variable \\
+\hline
+\end{longtable}
+
+\section{Casos Prácticos y Escenificaciones con Actores}
+
+\subsection*{Escenificación 1: El Hotel Comprometido}
+
+\textbf{Personajes:} Víctima, Atacante, Narrador.
+
+\textbf{Narrador:} 
+\textit{La víctima desayuna tranquilamente en el hotel. La tarjeta de su habitación está expuesta en la mesa.}
+
+\textbf{Atacante (pasa disimuladamente cerca):}
+\textit{(Simula escanear la tarjeta con el Flipper Zero)}
+
+\textbf{Narrador:} 
+\textit{La tarjeta ha sido clonada en segundos.}
+
+\textbf{Mensaje clave:} Cuidado con tarjetas RFID LF expuestas; existen fundas protectoras económicas.
+
+\subsection*{Escenificación 2: Apertura de Garaje}
+
+\textbf{Personajes:} Propietario, Atacante, Narrador.
+
+\textbf{Propietario:} 
+\textit{(Abre el garaje con su mando habitual.)}
+
+\textbf{Atacante (a distancia, graba la señal):}
+\textit{(Captura la señal Sub-GHz.)}
+
+\textbf{Narrador:} 
+\textit{El atacante ha grabado la señal fija y ahora puede abrir el garaje sin necesidad de fuerza.}
+
+\textbf{Mensaje clave:} Si el mando no usa rolling-code, es trivial de clonar.
+
+\subsection*{Escenificación 3: El USB Malicioso}
+
+\textbf{Personajes:} Víctima, Atacante, Narrador.
+
+\textbf{Narrador:} 
+\textit{Un pendrive encontrado en un taller maker. Curioso, alguien lo conecta a su portátil.}
+
+\textbf{Víctima:} 
+\textit{(Conecta el pendrive.)}
+
+\textbf{Atacante (por BadUSB):} 
+\textit{(El Flipper Zero simula teclado y ejecuta comandos automáticamente.)}
+
+\textbf{Mensaje clave:} No conectar dispositivos USB desconocidos.
+
+\subsection*{Escenificación 4: Evil Twin Wi-Fi}
+
+\textbf{Personajes:} Público del evento.
+
+\textbf{Narrador:} 
+\textit{Durante el evento hay un Wi-Fi gratuito disponible: “MakerFest\_Free”.}
+
+\textbf{Narrador:} 
+\textit{El atacante monta una copia exacta de la red con el mismo nombre y señal más potente.}
+
+\textbf{Público (algunos se conectan a la red falsa):} 
+
+\textbf{Narrador:} 
+\textit{El atacante intercepta tráfico y credenciales de quienes cayeron en la trampa.}
+
+\textbf{Mensaje clave:} Usar VPN en redes abiertas; comprobar autenticidad de puntos Wi-Fi.
+
+\subsection*{Escenificación 5: Hackeo Social en evento}
+
+\textbf{Narrador:} 
+\textit{Un asistente simpático empieza a conversar con otros participantes. Pregunta sobre los dispositivos que traen, sus credenciales, cómo han configurado sus sistemas…}
+
+\textbf{Atacante:} 
+\textit{(Obtiene datos personales y técnicos valiosos sin necesidad de tecnología, sólo por conversación.)}
+
+\textbf{Mensaje clave:} La ingeniería social es la herramienta más potente. Cuidado con lo que compartimos por simple simpatía.
+
+\section{Demostraciones Reales sobre el Público}
+
+\begin{itemize}
+    \item Se realizarán demostraciones controladas sobre asistentes previamente avisados.
+    \item Se explicarán los pasos exactos del ataque para que todos puedan aprender.
+    \item El público podrá comprobar en directo los riesgos expuestos.
+\end{itemize}
+
+\section{Sorteo de Premios: Hackeados Premiados}
+
+\begin{itemize}
+    \item Aquellos que hayan sido "hackeados" durante las pruebas prácticas participarán en un sorteo de premios.
+    \item Premios: fundas Faraday, protectores RFID, dispositivos de aprendizaje maker.
+\end{itemize}
+
+\section{Cierre y Reflexión Final}
+
+\begin{itemize}
+    \item Todo conocimiento técnico implica responsabilidad.
+    \item Conocer las vulnerabilidades permite protegerse mejor.
+    \item La seguridad es un hábito, no un estado.
+    \item La paranoia es tan inútil como la ignorancia: equilibrio y criterio.
+\end{itemize}
+
+\section{Recursos Adicionales y Bibliografía}
+
+\begin{itemize}
+    \item \textit{Hacking: The Art of Exploitation} - Jon Erickson
+    \item \textit{The Hacker Playbook} - Peter Kim
+    \item Plataformas: Hack The Box, TryHackMe, Root Me
+    \item Foros: Hackaday, Reddit r/flipperzero, DEFCON, CCC
+\end{itemize}
+
+\end{document}
