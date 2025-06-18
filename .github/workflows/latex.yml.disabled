@@ -14,7 +14,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Instalar LaTeX
-        run: sudo apt-get update && sudo apt-get install -y texlive-full
+        run: |
+          sudo apt-get install -y texlive-latex-base texlive-latex-recommended
+          sudo apt-get install -y texlive-lang-spanish
 
       - name: Compilar archivos .tex
         run: |
