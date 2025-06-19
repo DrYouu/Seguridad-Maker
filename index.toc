@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {1}Introducción: Tecnología y Seguridad en el Mundo Maker}{2}{section.1}%
+\contentsline {section}{\numberline {2}El Flipper Zero: El Cuchillo Suizo del Pentesting Personal}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}¿Qué es el Flipper Zero?}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Funciones principales}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Add-ons y expansión}{2}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Desde el punto de vista de la víctima}{2}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Amenazas Digitales con Impacto en el Mundo Físico}{3}{section.3}%
+\contentsline {section}{\numberline {4}Hackeo Social: Atacar a la Persona}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Ingeniería social aplicada al mundo maker}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Ataques combinados}{3}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Cómo Protegerse sin Paranoia}{3}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Prácticas físicas}{3}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Prácticas digitales}{3}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Ética Hacker y Cultura del Pentesting}{3}{section.6}%
+\contentsline {section}{\numberline {7}Comparativa de Dispositivos de Pentesting}{4}{section.7}%
+\contentsline {section}{\numberline {8}Casos Prácticos y Escenificaciones con Actores}{4}{section.8}%
+\contentsline {section}{\numberline {9}Demostraciones Reales sobre el Público}{4}{section.9}%
+\contentsline {section}{\numberline {10}Sorteo de Premios: Hackeados Premiados}{4}{section.10}%
+\contentsline {section}{\numberline {11}Cierre y Reflexión Final}{4}{section.11}%
+\contentsline {section}{\numberline {12}Recursos Adicionales y Bibliografía}{4}{section.12}%
